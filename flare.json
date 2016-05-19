@@ -41,13 +41,13 @@
    "name": "JRE",
    "children": [
     {
-	 "name": "Deployment", 
-     "children": [
-      {"name": "Java Web Start", "size": 1983},
-      {"name": "Applet,Java Plug-in", "size": 2047},
-      {"name": "JavaFX", "size": 1375}
-     ]
-	},
+    		"name": "Deployment", 
+	     "children": [
+	      {"name": "Java Web Start", "size": 1983},
+	      {"name": "Applet,Java Plug-in", "size": 2047},
+	      {"name": "JavaFX", "size": 1375}
+	     ]
+    },
     {
 		"name": "User Interface Toolkits", 
 	    "children": [
@@ -67,7 +67,8 @@
     {"name": "lang and util Base Libraries", "size": 10066},	
     {"name": "Java Virtual Machine", "size": 1732}
    ]
-  }
+  },
+   {"name": "Java Development Kit", "size": 10066},
   
  ]
 }
