@@ -58,7 +58,7 @@
 		{"name": "Drag and Drop", "size": 10498},
 		{"name": "Input Methods", "size": 2822},
 		{"name": "Image IO", "size": 9983},
-		{"name": "Print Service	", "size": 2213},
+		{"name": "Print Service", "size": 2213},
 		{"name": "Sound", "size": 1681}
 		]
 	},
@@ -68,7 +68,7 @@
     {"name": "Java Virtual Machine", "size": 1732}
    ]
   },
-   {"name": "Java Development Kit", "size": 10066},
+   {"name": "Java Development Kit", "size": 10066}
   
  ]
 }
