@@ -1,11 +1,11 @@
 {
- "name": "flare",
+ "name": "JAVA",
  "children": [
   {
-   "name": "analytics",
+   "name": "Java Language",
    "children": [
     {
-     "name": "cluster",
+     "name": "Java Language",
      "children": [
       {"name": "AgglomerativeCluster", "size": 3938},
       {"name": "CommunityStructure", "size": 3812},
