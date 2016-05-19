@@ -44,7 +44,7 @@
 	 "name": "Deployment", 
      "children": [
       {"name": "Java Web Start", "size": 1983},
-      {"name": "Applet／Java Plug-in", "size": 2047},
+      {"name": "Applet,Java Plug-in", "size": 2047},
       {"name": "JavaFX", "size": 1375}
      ]
 	},
@@ -57,7 +57,7 @@
 		{"name": "Accessibility", "size": 319},
 		{"name": "Drag and Drop", "size": 10498},
 		{"name": "Input Methods", "size": 2822},
-		{"name": "Image I／O", "size": 9983},
+		{"name": "Image IO", "size": 9983},
 		{"name": "Print Service	", "size": 2213},
 		{"name": "Sound", "size": 1681}
 		]
