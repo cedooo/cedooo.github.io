@@ -41,7 +41,7 @@
    "name": "JRE",
    "children": [
     {
-	 "name": "Deployment", ,
+	 "name": "Deployment", 
      "children": [
       {"name": "Java Web Start", "size": 1983},
       {"name": "Applet／Java Plug-in", "size": 2047},
