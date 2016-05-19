@@ -40,14 +40,34 @@
   {
    "name": "JRE",
    "children": [
-    {"name": "Deployment", "size": 8833},
-    {"name": "User Interface Toolkits", "size": 1732},
+    {
+	 "name": "Deployment", ,
+     "children": [
+      {"name": "Java Web Start", "size": 1983},
+      {"name": "Applet / Java Plug-in", "size": 2047},
+      {"name": "JavaFX", "size": 1375}
+     ]
+	},
+    {
+		"name": "User Interface Toolkits", 
+	    "children": [
+		{"name": "Swing", "size": 8833},
+		{"name": "Java 2D	", "size": 1082},
+		{"name": "AWT	", "size": 1336},
+		{"name": "Accessibility", "size": 319},
+		{"name": "Drag and Drop", "size": 10498},
+		{"name": "Input Methods", "size": 2822},
+		{"name": "Image I/O", "size": 9983},
+		{"name": "Print Service	", "size": 2213},
+		{"name": "Sound", "size": 1681}
+		]
+	},
     {"name": "Integration Libraries", "size": 3623},
     {"name": "Other Base Libraries", "size": 10066},
     {"name": "lang and util Base Libraries", "size": 10066},	
     {"name": "Java Virtual Machine", "size": 1732}
    ]
-  },
-  {"name": "JDK", "size": 10066}
+  }
+  
  ]
 }
