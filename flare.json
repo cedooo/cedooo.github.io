@@ -13,7 +13,7 @@
    ]
   },
   {
-   "name": "Tools & Tool APIs",
+   "name": "Tools  Tool APIs",
    "children": [
     {"name": "java", "size": 17010},
     {"name": "javac", "size": 5842},
