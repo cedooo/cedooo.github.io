@@ -47,6 +47,7 @@
     {"name": "lang and util Base Libraries", "size": 10066},	
     {"name": "Java Virtual Machine", "size": 1732}
    ]
-  }
+  },
+  {"name": "JDK", "size": 10066}
  ]
 }
