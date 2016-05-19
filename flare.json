@@ -62,7 +62,15 @@
 		{"name": "Sound", "size": 1681}
 		]
 	},
-    {"name": "Integration Libraries", "size": 3623},
+    {"name": "Integration Libraries",
+   "children": [
+    {"name": "IDL", "size": 1616},
+    {"name": "JDBC", "size": 1027},
+    {"name": "JNDI", "size": 3891},
+    {"name": "RMI", "size": 891},
+    {"name": "RMI-IIOP", "size": 2893},
+    {"name": "Scripting", "size": 5103}]
+   },
     {"name": "Other Base Libraries", "size": 10066},
     {"name": "lang and util Base Libraries", "size": 10066},	
     {"name": "Java Virtual Machine", "size": 1732}
