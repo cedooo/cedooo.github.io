@@ -107,12 +107,12 @@
     },	
     {"name": "Java Virtual Machine",
      "children": [
-          {"name": "Java HotSpot VM", "size": 5534}
+          {"name": "Java HotSpot VM", "size": 8534}
      ]
     }
    ]
   },
-   {"name": "Java Development Kit", "size": 10066}
+   {"name": "JDK", "size": 20066}
   
  ]
 }
