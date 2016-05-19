@@ -16,24 +16,7 @@
    "name": "Tools & Tool APIs",
    "children": [
      {"name": "java", "size": 17010},
-     {"name": "javac", "size": 5842},
-     {"name": "javadoc", "size": 1041},
-     {"name": "jar", "size": 5176},
-     {"name": "javap", "size": 449},
-     {"name": "JPDA", "size": 5593},
-     {"name": "JConsole", "size": 5534},
-     {"name": "Java VisualVM", "size": 9201},
-     {"name": "JMC", "size": 19975},
-     {"name": "JFR", "size": 1116},
-     {"name": "Java DB	Int\'l", "size": 6006},
-     {"name": "JVM TI", "size": 19975},
-     {"name": "IDL", "size": 1116},
-     {"name": "Deploy", "size": 6006},
-     {"name": "Security", "size": 5176},
-     {"name": "Troubleshoot", "size": 449},
-     {"name": "Scripting", "size": 5593},
-     {"name": "Web Services", "size": 5534},
-     {"name": "RMI", "size": 5534}
+     {"name": "javac", "size": 5842}
    ]
   },
   {
