@@ -71,9 +71,45 @@
     {"name": "RMI-IIOP", "size": 2893},
     {"name": "Scripting", "size": 5103}]
    },
-    {"name": "Other Base Libraries", "size": 10066},
-    {"name": "lang and util Base Libraries", "size": 10066},	
-    {"name": "Java Virtual Machine", "size": 1732}
+    {"name": "Other Base Libraries",
+     "children": [
+      {"name": "Beans", "size": 593},
+      {"name": "Int'l Support", "size": 330},
+      {"name": "Input/Output", "size": 287},
+      {"name": "JMX", "size": 277},
+      {"name": "JNI", "size": 292},
+      {"name": "Math", "size": 595},
+      {"name": "Networking", "size": 594},
+      {"name": "Override Mechanism", "size": 460},
+      {"name": "Security", "size": 603},
+      {"name": "Serialization", "size": 625},
+      {"name": "Extension Mechanism", "size": 748},
+      {"name": "XML JAXP", "size": 461}
+	  ]
+    },
+    {
+     "name": "lang and util Base Libraries",
+     "children": [
+      {"name": "lang and util", "size": 2138},
+      {"name": "Collections", "size": 3824},
+      {"name": "Concurrency Utilities", "size": 1353},
+      {"name": "JAR", "size": 4665},
+      {"name": "Logging", "size": 2649},
+      {"name": "Management", "size": 2832},
+      {"name": "Preferences API", "size": 4896},
+      {"name": "Ref Objects", "size": 763},
+      {"name": "Reflection", "size": 5222},
+      {"name": "Regular Expressions", "size": 7862},
+      {"name": "Versioning", "size": 8435},
+     {"name": "Zip", "size": 19975},
+     {"name": "Instrumentation", "size": 1116}
+     ]
+    },	
+    {"name": "Java Virtual Machine",
+     "children": [
+          {"name": "Java HotSpot VM", "size": 5534}
+     ]
+    }
    ]
   },
    {"name": "Java Development Kit", "size": 10066}
