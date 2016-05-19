@@ -92,7 +92,7 @@
      "children": [
       {"name": "lang and util", "size": 2138},
       {"name": "Collections", "size": 3824},
-      {"name": "Concurrency Utilities", "size": 1353},
+      {"name": "Zip", "size": 1353},
       {"name": "JAR", "size": 4665},
       {"name": "Logging", "size": 2649},
       {"name": "Management", "size": 2832},
@@ -101,7 +101,7 @@
       {"name": "Reflection", "size": 5222},
       {"name": "Regular Expressions", "size": 7862},
       {"name": "Versioning", "size": 8435},
-     {"name": "Zip", "size": 19975},
+     {"name": "Concurrency Utilities", "size": 19975},
      {"name": "Instrumentation", "size": 1116}
      ]
     },	
