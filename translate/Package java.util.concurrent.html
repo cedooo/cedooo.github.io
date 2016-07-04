@@ -31,5 +31,22 @@ Executors ÀàÎª Executors Ìá¹©ÁË³£ÓÃµÄ¹¤³§·½·¨ÒÔ¼°ÅäÖÃ¹¦ÄÜ£¬Ò²Ìá¹©ÁËÉÙÁ¿µÄ¹©Ê¹ÓÃµ
 ÆäËüÒÔ Executors Îª»ù´¡µÄ¹¤¾ß°üÀ¨¶ÔFutureµÄÀ©Õ¹ÊµÏÖFutureTask¡¢ExecutorCompletionService¡¢¡£¡£¡£¡£
 ForkJoinPool Ìá¹©ÁËÒ»¸öÖ÷ÒªÉè¼ÆÓÃÀ´Ö´ĞĞ´¦Àí ForkJoinTask ºÍËü×ÓÀàÊµÀıµÄ Executor¡£ÕâĞ©ÀàÊ¹ÓÃÁË Work-stealing µ÷¶ÈÄÇĞ©Ïë»ñµÃ¸ßÍÌÍÂÁ¿µÄÆ«Ïò¼ÆËãĞÍµÄ¶à´¦ÀíÆ÷²¢ĞĞÈÎÎñ¡£
 </p>
+<p>
+Queues
+</p>
+<p>
+ConcurrentLinkedQueue ÀàÖ§³Ö¸ßĞ§¿ÉÀ©Õ¹²¢ÇÒÏß³Ì°²È«µÄnon-blocking FIFO ¶ÓÁĞ¡£
+ÔÚ java.util.concurrent ÖĞÓĞÎå¸ö¼Ì³Ğ×Ô BlockingQueue ½Ó¿ÚµÄÊµÏÖ£¬¶¨ÒåÁËËøµÄ put ºÍ take µÄËøµÄ°æ±¾£¿£ºLinkedBlockingQueue,ArrayBlockingQueue,SynchronousQueue,PriorityBlockingQueue,DelayQueue.
+²»Í¬µÄÀà¸²¸ÇÁËÉú²úÕßÏû·ÑÕß¡¢ÏûÏ¢¡¢²¢ĞĞÈÎÎñ¡¢Ïà¹Ø²¢ĞĞÉè¼Æ µÄ´ó¶àÊı³£¼ûµÄÓ¦ÓÃ³¡¾°¡£
+¼Ì³ĞÁË TransferQueue ²¢ÇÒÊµÏÖÁË LinkedTransferQueue ÒıÈëÍ¬²½ transfer ·½·¨ Éú²úÕß¿ÉÒÔÑ¡ÔñĞÔµÄÈÃËûµÄÏû·ÑÕßµÈ´ı¡£
+BlockingDeque ½Ó¿Ú¼Ì³ĞÁË BlockingQueue À´Ö§³Ö FIFO ºÍ LIFO ²Ù×÷£¬ LinkedBlockingDeque Ìá¹©ÁË¾ßÌåµÄÊµÏÖ¡£  
+</p>
+<p>
+Timing
+</p>
+<p>
+TimeUnit ÀàÌá¹©¶àÁ£¶È(°üÀ¨ÄÉÃë)À´Ö¸¶¨ÒÔ¼°¿ØÖÆ³¬Ê±µÄ²Ù×÷¡£
+Õâ¸ö°üÀïµÄ´ó¶àÊıÀà¶¼°üº¬ÓĞ»ùÓÚ³¬Ê±µÈ´ıµÄ²Ù×÷£¬³ıÁËÄÇĞ©²»È·¶¨µÄµÈ´ıÒÔÍâ¡£
+</p>
 </body>
 </html>
