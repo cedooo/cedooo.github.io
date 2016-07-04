@@ -1,0 +1,35 @@
+<html>
+<body>
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html#package_description" >原文</a>
+<p>
+java.util.concurrent 包
+</p> 
+<p>描述
+在并发编程中有用的工具类，该包包含一些标准的扩展小框架，其中一些类也提供有用的很特殊并且难以实现功能，这里简单的描述一下主要的部件。
+也可以查看 java.util.concurrent.locks 和 java.util.concurrent.atomic 包。
+</p>
+<p>
+Executors
+</p>
+<p>
+接口。 
+Executor 是一个简单标准的,用来像 thread 一样进行自定义的接口，包括线程池、同步IO、轻量级任务框架。
+依靠创建的 Executor  类来进行利用，任务能在新创建的线程下执行，一个已经存在的 task-execution 线程，或者叫做 execut 的线程，和能够顺序执行或者同步执行。
+ExecutorService 提供更加完整的同步任务执行框架。
+一个 ExecutorService 管理任务的排列以及调度，并且能够控制任务的关闭。
+ScheduleExecutorService 子接口以及相关的接口添加了对定时任务以及周期任务执行的支持。
+ExecutorServices 提供了方法去排列并行执行的 Callable 任务 或者 ....
+Future 返回一个函数的结果，能够控制任务执行是否结束以及提供一种放弃执行的意义，
+RunnableFuture 是一个Future 依赖于 run 方法的结果而设置得到的结果。
+</p>
+<p>
+实现。
+</p>
+<p>
+ThreadPoolExecutor 和 ScheduledThreadPoolExecutor 提供了可调节的复杂的线程池.
+Executors 类为 Executors 提供了常用的工厂方法以及配置功能，也提供了少量的供使用的工具方法。
+其它以 Executors 为基础的工具包括对Future的扩展实现FutureTask、ExecutorCompletionService、。。。。
+ForkJoinPool 提供了一个主要设计用来执行处理 ForkJoinTask 和它子类实例的 Executor。这些类使用了 Work-stealing 调度那些想获得高吞吐量的偏向计算型的多处理器并行任务。
+</p>
+</body>
+</html>
