@@ -1,4 +1,26 @@
 <html>
+<head>
+	<style type="text/css">
+		body{
+			padding: 2% 3%;
+		}
+		.proto {
+			color: 84ADE7;
+			font-size: 6;
+		}
+		.target {
+			color: black;
+			font-size: 16px;
+		}
+		.tit {font-weight:bold; color: green;}
+		.question{
+			color: FF5400;
+		}
+		.question:hover{
+			cursor:help;
+		}
+	</style>
+</head>
 <body>
 <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html#package_description" >原文</a>
 <p>
@@ -48,5 +70,127 @@ Timing
 TimeUnit 类提供多粒度(包括纳秒)来指定以及控制超时的操作。
 这个包里的大多数类都包含有基于超时等待的操作，除了那些不确定的等待以外。
 </p>
+<p >
+<div class="proto">
+Synchronizers
+</div>
+<div class="target tit">
+同步
+</div>
+</p>
+<p>
+<div class="proto">
+Five classes aid common special-purpose synchronization idioms
+</div>
+<div class="target">
+有五个用来达到常用目同步目的的类。
+</div>
+<div class="proto">
+Semaphore is a classic concurrency tool.
+</div>
+<div class="target">
+Semaphore是一个标准的并行工具类。</div>
+<div class="proto">
+CountDownLatch is a very simple yet very common utility for blocking until a given number of signals, events, or conditions hold.
+</div>
+<div class="target">
+CountDownLatch是一个非常简单以及普遍适用的用来锁操作的单位。主要接受给定数量的信号、事件、或者情况保持。</div>
+<div class="proto">
+A CyclicBarrier is a resettable multiway synchronization point useful in some styles of parallel programming.
+</div>
+<div class="target">
+CycliBarrier是一个复位多路同步点，在并行编程中非常有用。</div>
+<div class="proto">
+A Phaser provides a more flexible form of barrier that may be used to control phased computation among multiple threads.
+</div>
+<div class="target">
+Phaser类提供更多复杂的结构---可能用来控制多线程的分段运算。</div>
+<div class="proto">
+An Exchanger allows two threads to exchange objects at a rendezvous point, and is useful in several pipeline designs.
+</div>
+<div class="target">
+Exchanger允许2个线程在rendezvous点进行交流/交换，在一些管道设计中很有用处。</div>
+</p>
+<p>
+<div class="proto">
+Concurrent Collections</div>
+<div class="target tit">
+并发Collections</div>
+</p>
+<p>
+
+<div class="proto">
+Besides Queues, this package supplies Collection implementations designed for use in multithreaded contexts: ConcurrentHashMap, ConcurrentSkipListMap, ConcurrentSkipListSet, CopyOnWriteArrayList, and CopyOnWriteArraySet. 
+</div>
+<div class="target">
+除了队列，这个包中提供了供多线程使用而设计的类的实现：ConcurrentHashMap, ConcurrentSkipListMap, ConcurrentSkipListSet, CopyOnWriteArrayList, 和 CopyOnWriteArraySet.
+</div> 
+
+<div class="proto">
+When many threads are expected to access a given collection, a ConcurrentHashMap is normally preferable to a synchronized HashMap, 
+and a ConcurrentSkipListMap is normally preferable to a synchronized TreeMap.
+</div>
+<div class="target">
+当给定的collection允许多线程进入时， ConcurrentHashMap通常比同步HashMap更加合适，ConcurrentSkipListMap比同步TreeMap更加合适。
+</div>
+<div class="proto">
+A CopyOnWriteArrayList is preferable to a synchronized ArrayList when the expected number of reads and traversals greatly outnumber the number of updates to a list.
+</div>
+<div class="target">
+当期望大量的读取和深度遍历将数值更新到list时，CopyOnWriteArrayList比同步ArrayList更加合适。
+</div>
+<div class="proto">
+The "Concurrent" prefix used with some classes in this package is a shorthand indicating several differences from similar "synchronized" classes. For example java.util.Hashtable and Collections.
+synchronizedMap(new HashMap()) are synchronized. But ConcurrentHashMap is "concurrent". A concurrent collection is thread-safe, but not governed by a single exclusion lock. 
+In the particular case of ConcurrentHashMap, it safely permits any number of concurrent reads as well as a tunable number of concurrent writes. 
+"Synchronized" classes can be useful when you need to prevent all access to a collection via a single lock, at the expense of poorer scalability. 
+In other cases in which multiple threads are expected to access a common collection, "concurrent" versions are normally preferable. And unsynchronized collections are preferable when either collections are unshared, or are accessible only when holding other locks.
+</div>
+<div class="target">
+包中有些类运用Concurrent前缀是为了用来速记以便和synchronized类进行区分， 例如，java.util.Hashtable和Collections.synchronizedMap(new HashMap())是同步的。但是ConcurrentHashMap是并发的。
+并发的collection是线程安全的，<span class="question" >但是不受单个排他锁的管理</span>,ConcurrentHashMap在特定情况下，对它的并发读取和一定数量的写入是被允许的。
+同步类在你需要禁止通过单独的锁而进入一个collection时是非常有用的，但是它牺牲了可调节性。
+在其它需要多线程进入访问一个collection的情况时，并发的collection更加适用，非同步的collections在非共享或者只是通过锁来进行访问时更加合适。
+</div>
+<div class="proto">
+Most concurrent Collection implementations (including most Queues) also differ from the usual java.util conventions in that 
+their Iterators provide weakly consistent rather than fast-fail traversal. A weakly consistent iterator is thread-safe, 
+but does not necessarily freeze the collection while iterating, so it may (or may not) reflect any updates since the iterator was created.
+</div>
+
+<div class="target">
+大部分并发集合的实现(包括大部分Queue)通常和java.util中的常规实现不同，<span class="question">因为它们的迭代器提供了弱一致的，而不是快速失败的遍历。弱一致的迭代器是线程安全的，但是在迭代时没有必要冻结 collection，所以它不一定反映自迭代器创建以来的所有更新。</span>
+</div>
+</p>
+<p>
+<div class="proto">
+Memory Consistency Properties
+</div>
+<div class="target tit">
+内存一致性属性
+</div>
+</p>
+<p>
+Chapter 17 of The Java? Language Specification defines the happens-before relation on memory operations such as reads and writes of shared variables.
+ Java语言规范第17章中定义了对内存的像读写以及共享操作时happens-before的含义，
+ The results of a write by one thread are guaranteed to be visible to a read by another thread only if the write operation happens-before the read operation. 
+ 线程一次读写的结果只有在该线程写操作发生在读操作之前才被允许对其它线程读取可见。
+ The synchronized and volatile constructs, as well as the Thread.start() and Thread.join() methods, can form happens-before relationships. In particular:
+Each action in a thread happens-before every action in that thread that comes later in the program's order.
+An unlock (synchronized block or method exit) of a monitor happens-before every subsequent lock (synchronized block or method entry) of that same monitor. And because the happens-before relation is transitive, all actions of a thread prior to unlocking happen-before all actions subsequent to any thread locking that monitor.
+A write to a volatile field happens-before every subsequent read of that same field. Writes and reads of volatile fields have similar memory consistency effects as entering and exiting monitors, but do not entail mutual exclusion locking.
+A call to start on a thread happens-before any action in the started thread.
+All actions in a thread happen-before any other thread successfully returns from a join on that thread.
+The methods of all classes in java.util.concurrent and its subpackages extend these guarantees to higher-level synchronization. In particular:
+Actions in a thread prior to placing an object into any concurrent collection happen-before actions subsequent to the access or removal of that element from the collection in another thread.
+Actions in a thread prior to the submission of a Runnable to an Executor happen-before its execution begins. Similarly for Callables submitted to an ExecutorService.
+Actions taken by the asynchronous computation represented by a Future happen-before actions subsequent to the retrieval of the result via Future.get() in another thread.
+Actions prior to "releasing" synchronizer methods such as Lock.unlock, Semaphore.release, and CountDownLatch.countDown happen-before actions subsequent to a successful "acquiring" method such as Lock.lock, Semaphore.acquire, Condition.await, and CountDownLatch.await on the same synchronizer object in another thread.
+For each pair of threads that successfully exchange objects via an Exchanger, actions prior to the exchange() in each thread happen-before those subsequent to the corresponding exchange() in another thread.
+Actions prior to calling CyclicBarrier.await and Phaser.awaitAdvance (as well as its variants) happen-before actions performed by the barrier action, and actions performed by the barrier action happen-before actions subsequent to a successful return from the corresponding await in other threads.
+</p>
+<hr >
+Since:
+1.5
 </body>
 </html>
